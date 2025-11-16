@@ -15,5 +15,18 @@
   "bugs": {
     "url": "https://github.com/zakzakst/remix-practice/issues"
   },
-  "homepage": "https://github.com/zakzakst/remix-practice#readme"
+  "homepage": "https://github.com/zakzakst/remix-practice#readme",
+  "dependencies": {
+    "@remix-run/dom": "^0.0.0-experimental-remix-jam.1",
+    "@remix-run/events": "^0.0.0-experimental-remix-jam.1",
+    "@remix-run/fetch-router": "^0.8.0",
+    "@remix-run/lazy-file": "^3.7.0",
+    "@remix-run/node-fetch-server": "^0.12.0",
+    "playwright": "^1.56.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "esbuild": "^0.27.0",
+    "tsx": "^4.20.6"
+  }
 }
