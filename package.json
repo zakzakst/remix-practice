@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development tsx watch server.ts",
+    "dev": "cross-env NODE_ENV=development tsx watch server.ts",
     "dev:browser": "esbuild app/assets/*.tsx --outbase=app/assets --outdir=public/assets --bundle --minify --splitting --format=esm --entry-names='[dir]/[name]' --chunk-names='chunks/[name]-[hash]' --sourcemap --watch"
   },
   "repository": {
@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
+    "cross-env": "^10.1.0",
     "esbuild": "^0.27.0",
     "tsx": "^4.20.6"
   }
